@@ -1,74 +1,506 @@
-<!DOCTYPE html>
-<html lang:"en">
+<!doctype html>
 
-<head>
-	<title> Demo of HTML5 Forms </title>
-	<meta charset="utf-8">
-</head>
+<html>
+    
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=Nobile); /*--- Heading Font --*/
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu);
+    @import url(https://fonts.googleapis.com/css?family=Itim);
+    @import url(https://fonts.googleapis.com/css?family=Nunito);
+    /*--------------------*/
+    * {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  overflow:scroll;
+}
 
-<body>
+.wrap {
+  width: 320px;
+  border: 1px solid #ccc;
+  height: 480px;
+  overflow: auto;
+  position: relative;
+}
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 60px;
+  .menu-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 18px 20px;
+  }
+  .fix-search & {
+    background: #eee;
+  }
+}
+
+.search {
+  position: absolute;
+  top: 155px;
+  left: 20px;
+  right: 20px;
+  input {
+    width: 265px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 15px;
+    transition: width 0.2s;
+    -webkit-appearance: none;
+  }
+  .fix-search & {
+    position: fixed;
+    top: 10px;
+    input {
+      width: 250px;
+    }
+  }
+}
+
+.top {
+  height: 45px;
+  padding-top: 0px;
+  text-align:center;
+}
+.hero {
+  width: 300px;
+  height: 40px;
+  background: #ccc;
+  margin: 0 auto;
+}
+
+main {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  div {
+    width: 125px;
+    height: 80px;
+    background: #ccc;
+    margin: 0 0 20px 0;
+  }
+}
+/*--------------------*/
+        .border
+        {
+            width:200px;
+            height:200px;
+            border-radius:100%;
+        }
+        .back
+        {
+            background-size: 60% 30%;
+    background-repeat: no-repeat;
+        }
+        #c2
+        {
+         width:300px;   
+        }
+         #c21
+        {
+         width:30px;   
+        }
+         #c3
+        {
+         width:450px;
+        
+         
+        }
+        #container {
+    background-image:url("C:/Users/96bub/Desktop/imad-2016-app-master/ui/blue-and-green-triangles.jpg");
+          
+            background-repeat: no-repeat;
+            /*overflow:auto;*/
+background-size:cover;
+    margin: 10px auto;
+    position: relative;
+    height: auto !important;
+	top:150px;
+}
+#transbox {
+   width: 500px;
+height: 250px;
+margin: 30px 50px;
+border-radius:20px;
+background-color: rgba(16, 37, 64, 0.6);
+    color: #25c6f9;
+    font-family: "Varela",cursive;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    
+}
+
+/*#para {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}*/
+#tabl
+{
+    height:108px;
+}
+       /* #imag*/
+        /*{*/
+           /* background-image:url("http://netdna.webdesignerdepot.com/uploads/2013/06/featured48.jpg");*/
+          /* background-image:url("http://imagesbase.ru/uploads/posts/2014-12/1419774374_imagesbase.ru-971.jpg");*/
+         /* background-image:url("http://data.1freewallpapers.com/detail/blue-and-green-triangles.jpg");
+          
+            background-repeat: no-repeat;*/
+            /*height:400px;*/
+            /*width:1350px;*/
+            /*background-size:cover;*/
+            
+   /* width: 100%;
+    height: 100%;
+    height: auto;
+    min-height:100%;*/
+        /*}*/
+        #headr
+        {
+            /*background-color:#4CAF50 !important;*/
+            background-color:#10bb6a !important;
+			padding-top:40px;
+            height:46px;
+            
+           /* background-size:cover;*/
+             position: fixed;
+           
+  right: 0;
+  top:150px;
+  left: 0;
+  /*padding-left:1.7rem;*/
+  text-align: center;
+        }
+		#logo{
+		            height:100px;
+					position: fixed;
+		}
+         #headr1
+        {
+            background-color:#757575!important;
+            height:70px;
+            
+            /*background-size:cover;*/
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0rem;
+  text-align: center;
+  position:fixed;
+  padding-bottom:0px;
+        }
+        .flex-init-setup {
+     display: -webkit-box;
+     display: -moz-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+ }
+ .flex-ppal-setup {
+     -webkit-flex-flow: column wrap;
+     -moz-flex-flow: column wrap;
+     flex-flow: column wrap;
+     -webkit-justify-content: center;
+     -moz-justify-content: center;
+     justify-content: center;
+ }
+        #C0
+        {
+            width:60px;
+            height:40px;
+            color:black;
+        }
+        #C1
+        {
+            width:80px;
+            height:40px;
+            color:black;
+        }
+        #tab
+        {
+            height:150px;
+        }
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left:0px;
+    overflow: hidden;
+    background-color: #10bb6a;
+}
+#u
+{
+    list-style-type: none;
+    margin: 0;
+    padding-right: -20px;
+    padding-bottom:-15px;
+    height:70px;
+    overflow: hidden;
+    background-color:#757575!important ;
+}
+#l
+{
+    float:right;
+}
+#a:hover
+{
+   background-color: #757575!important;
+    color:black; 
+}
+li {
+    float: left;
+    padding-left:2px;
+}
+
+li a {
+    display: list-item;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+   /* background-color: #04417d;*/
+   background-color:rgba(16, 37, 64, 0.6);
+    color:black;
+}
+#home{
+    background-color: #5bc1a9;
+}
+#ic1,#ic2,#ic3,#ic4{
+    height:100px;width:100px;
+}
+#ic1:hover{
+    height:120px;
+    width:120px;
+}
+#ic2:hover{
+    height:120px;
+    width:120px;
+}
+#ic4:hover{
+    height:120px;
+    width:120px;
+}
+#ic3:hover{
+    height:120px;
+    width:120px;
+}
+#abo:onclick{
+    background-color:#5bc1a9;
+   
+}
+#par1
+{
+     font-family:'Nunito', sans-serif;
+}
+    </style>
+   <script>
+          var home, abo, yPos;
+function yScroll(){
+home = document.getElementById('home');
+abo = document.getElementById('abo');
+	yPos = window.pageYOffset;
+	if(yPos > 800){
+	home.style.background-color= "#10bb6a";
+			abo.style.background-color="#5bc1a9";
+	} else {
+		home.style.background-color= "#5bc1a9";
+			abo.style.background-color= "#10bb6a";
+	}
+}
+window.addEventListener("scroll", yScroll);
+      </script>
+      
+    <body>
+      
+      
+      
+     
+  
+  
 
 
-<!--form with new enhanced richer input control -->
-<!--form attributes - validation on and autocomplete on are default behavior for some browsers. -->
-<!-- can set additional attributes on input control -->
-
-<form action="http://jkorpela.fi/cgi-bin/echo.cgi"
-      validate 
-      autocomplete=on 
-      onsubmit='alert("\nname="+ name.value +
-                      "\nemail="+ email.value +
-                      "\nurl=" + url.value +
-                      "\nfavcolor=" + favcolor.value + 
-                      "\nquantity=" + quantity.value + 
-                      "\ncool=" + cool.value + 
- 		      "\nbecool=" + becool.value + 
-		      "\ntel=" + tel.value + 
-                      "\nstartdate= " + startdate.value +
-		      "\nfile= " + file.value +
-		      "\ntime= " + time.value +
-		      "\nmonth= " + month.value +
-		      "\nweek= " + week.value +
-		      "\nlocal datatime= " + datetimelocal.value );'>
 
 
-<h1>Sign Up for FakeBook&reg</h1>
-<hr/>
+		<header>
+		<img id="logo" src="C:/Users/96bub/Desktop/imad-2016-app-master/ui/HealthCare.jpg"/>
+		</header>
+		</br>
 
-<p>Your name: <input type="name" name="name"  autocomplete=off /></p> 
-
-<p>Your email address: <input type="email" name="email"  autofocus required /></p> 
-
-<p>Your website's URL: <input type="url" name="url" /></p>
-
-<p>Your favorite color: <input  type="color" name="favcolor" value="#ff0000"/></p>
-
-<p>I want to receive <input type="number" min=1 max=20 step=2 name="quantity" placeholder="1"/> doses of <cite> Living Bread</cite> each day.</p>
-
-<p>How cool are you? (On a scale of 1-10):<input type="range" min="1" max="10" name="cool" /></p>
-
-<p>How cool do you want to become? (On a scale of 1-10):<input type="range" min="1" max="10" name="becool" value=10 disabled/></p>
-
-<p>phone #   <input type="tel" name="tel" pattern="[789][0-9]{9}" /> </p>
-
-<p>Your birthdate: <input type="date" min="1900-01-01" max="2016-09-23" name="startdate" placeholder="2015-09-23" /></p>
-
-<p>Select a file: <input type="file" name="file" multiple/></p>
-
-<p>Select time: <input type="time" name="time"/></p>
-
-<p>Select month: <input type="month" name="month"/></p>
-
-<p>Select week: <input type="week" name="week"/></p>
-
-<p>Select local date time: <input type="datetime-local" name="datetimelocal"/></p>
-
-<p><input type="submit"  value="Sign Me Up" /></p>
-
-</form>
-
-
-</body>
-
-</html> 
-
+        <div class="flex-init-setup,flex-ppal-setup" id="container">
+        <header id="headr">
+            <script src="C:/Users/96bub/Desktop/imad-2016-app-master/ui/main3.js"></script>
+          <ul>
+  <li id="home"><a onclick="myfun1()" href="#hom">Home</a></li>
+  <li  id="abo"><a onclick="myfun()" href="#about">ABOUT ME</a></li>
+  <script>
+function myfun() {
+    document.getElementById("home").style.backgroundColor="#10bb6a";
+    document.getElementById("abo").style.backgroundColor="#5bc1a9";
+}
+function myfun1() {
+    document.getElementById("abo").style.backgroundColor="#10bb6a";
+    document.getElementById("home").style.backgroundColor="#5bc1a9";
+}
+</script>
+</ul>
+<!--<div class="top">
+    <div class="hero">
+  <main>
+   
+    <ul>
+  <li><a href="http://shubham491.imad.hasura-app.io/profile" id="home">Home</a></li>
+  <li><a href="http://shubham491.imad.hasura-app.io/article-one">ABOUT ME</a></li>
+  
+   
+  </main>
+  </div>
+  </div>-->
+  
+  
+        </header>
+        <a name="hom"></a>
+        <div>
+            <table id="tab"></table>
+            <table>
+                <tr>
+                    <td id="c21">
+                    
+                </td>
+                <td>
+                    <img id="imge" src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/11025778_1604575746421985_2456426902970919579_n.jpg?oh=dfe1205bdef6d1680a05207bc3ec895e&oe=586E51C2" class="border"/>
+                </td>
+                <td id="c2">
+                    
+                </td>
+                <td id="c3">
+                    
+  <div id="transbox">
+      <h3 style="text-align:center;font-size:25px;text-decoration:underline;">Shubham Das</h3>
+      <hr style="align:center;width:280px;">
+                    <p id="para">Hey there! I am a student enrolled in Computer Science Engineering in Kalyani Government Engineering College.I am presently in my 3rd year of B-Tech.I am very much passionate about coding and have done courses on Core Java and Advanced Java.</p>
+                    </div>
+                    
+                </td>
+                </tr>
+            </table>
+            <table id ="tabl">
+                
+            </table>
+            
+            
+        </div>
+        </div>
+        <a name="about">
+            <table>
+            <tr style="height:70px">
+                
+            </tr>
+        </table>
+         <table>
+            <tr style="height:140px;">
+                <td style="width:10px;"></td>
+                <td style="width:400px;text-align:center;"><a href="#academic"><img id="ic1" src="C:/Users/96bub/Desktop/imad-2016-app-master/ui/academics-button.png"></a></td>
+                <td style="width:500px;text-align:center;"><img id="ic2" src="C:/Users/96bub/Desktop/imad-2016-app-master/ui/training-icon-dkgrn.png"></td>
+                <td style="width:500px;text-align:center;">
+                    <img id="ic3" src="C:/Users/96bub/Desktop/imad-2016-app-master/ui/employment_icon.png">
+                </td>
+                <td style="width:500px;text-align:center;"><img id="ic4" src="C:/Users/96bub/Desktop/imad-2016-app-master/ui/icon-personal-preference.png"></td>
+            </tr>
+            <tr>
+                <td style="width:10px;"></td>
+                <td style="width:400px;"><a style="text-decoration: none;color:black;" href="#academic"><h1 style="font-family: 'Nobile',sans-serif;font-size:16px;text-align:center;">ACADEMICS</h1></a></td>
+                <td style="width:500px;"><h1 style="font-family: 'Nobile',sans-serif;font-size:16px;text-align:center;">TRAININGS</h1></td>
+                <td style="width:500px;"><h1 style="font-family: 'Nobile',sans-serif;font-size:16px;text-align:center;">COMPUTER SKILLS</h1></td>
+                <td style="width:500px;"><h1 style="font-family: 'Nobile',sans-serif;font-size:16px;text-align:center;">PERSONAL INTEREST</h1></td>
+            </tr>
+        </table>
+         </a>
+          <table>
+            <tr style="height:50px">
+                
+            </tr>
+            <a name="academic"></a>
+        </table>
+         <h1 style="font-family: 'Nobile',sans-serif;font-size:34px;color:#1aad57;text-align:center;">Academics</h1>
+         <hr style="width:500px;text-align:center;margin-top:-20px;">
+         <table>
+            <tr style="height:20px">
+                
+            </tr>
+            <tr>
+                 <td style="width:30px;"></td>
+                <td style="height:150px;width:150px;">
+                    <img style="height:170px;width:150px;border-radius:100%;" src="http://www.schools24hours.com/admin/posters/b50fca41afc776a11fe4a2fdfcb104d2.jpg"/>
+                    </td>
+                <td style="width:30px;"></td>
+                <td style="width:800px;font-size:18px;"><div id="par1">
+                    <article>Estd. in 1982. The School is affiliated to the Council for the Indian School Certificate</article><a style="text-decoration:none;" id="rm">Read more</a> 
+                    </div>
+                </td>
+                
+            </tr>
+            
+        </table>
+        <script>
+            var par1=document.getElementById("par1");
+            var rm=document.getElementById("rm");
+            rm.onclick=function(){
+               par1.innerHTML=` <article id="par1">Estd. in 1982. The School is affiliated to the Council for the Indian School Certificate Examinations (CISCE) New Delhi for ICSE ( X th Std.) and ISC ( XII the std) for Science, Arts and Commerce streams. Situated at the heart of Howrah City at Howrah Maidan, a few steps away from proposed Metro Railway Station and within 1 k.m. of walking distance from Howrah Railway Station.I passed my 10th & 12th standard from this school and topped my school with  96% in both the standards.
+                    </article>
+                    <a id="sl" style="text-decoration:none;">Show less</a>` ;
+            };
+            var sl=document.getElementById("sl");
+            sl.onclick=function(){
+                par1.innerHTML=`<article>Estd. in 1982. The School is affiliated to the Council for the Indian School Certificate</article><a style="text-decoration:none;" id="rm">Read more</a>`;
+            };
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="C:/Users/96bub/Desktop/imad-2016-app-master/ui/readmore.js"></script>
+        <script>
+            $('article').readmore({
+  speed: 75,
+  lessLink: '<a href="#">Read less</a>'
+  heightMargin: 16
+});
+        </script>
+        <table>
+            <tr>
+                <td style="width:400px;"></td>
+                <td style="width:800px;font-size:18px;text-align:right;">
+                    <p id="par1">I am a student enrolled in Computer Science Engineering in Kalyani Government Engineering College and is presently in my 3rd year of B-Tech.I topped from my department in my first year and do have 8.46 cgpa after 4 semesters.</p>
+                </td>
+                <td style="width:30px;"></td>
+                <td style="height:150px;width:150px;">
+                    <img style="height:150px;width:150px;border-radius:100%;" src="C:/Users/96bub/Desktop/imad-2016-app-master/ui/KgecLogo.png"/>
+                    </td>
+                    <td style="width:30px;"></td>
+            </tr>
+        </table>
+        <table>
+            <tr style="height:200px">
+                
+            </tr>
+        </table>
+        <footer id="headr1">
+            <ul id="u">
+  <li id="l"><a href="https://www.facebook.com/shubham.das.942" id="a"><img src="https://s-media-cache-ak0.pinimg.com/236x/27/d5/42/27d542e2e2626de4c08ee3d84aaabb7b.jpg" style="height:50px;width:50px;border-radius:100%;" ></a></li>
+  <li id="l"><a href="https://twitter.com/shubham491das" id="a"><img src="http://www.chefscollaborative.org/wp-content/uploads/2012/02/twitter.png" style="height:50px;width:50px;border-radius:100%;" ></a></li>
+  <li id="l"><a href="https://plus.google.com/u/0/107768297258197554195" id="a"><img src="http://carolinas.pga.com/gui/carolinas36/userpages/Instagram/24171.png" style="height:50px;width:50px;border-radius:100%;" ></a></li>
+  <li id="l"><a href="https://www.linkedin.com/in/shubham-das-8a00b3115" id="a"><img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-black-3d-buttons-icons-social-media-logos/099107-glossy-black-3d-button-icon-social-media-logos-linkedin-logo-square2.png" style="height:50px;width:50px;border-radius:100%;" ></a></li>
+  
+</ul>
+            
+        </footer>
+        
+    </body>
+</html>
