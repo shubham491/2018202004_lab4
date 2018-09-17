@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang:"en">
+
+<head>
+	<title> Demo of HTML5 Forms </title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+
+<!--form with new enhanced richer input control -->
+<!--form attributes - validation on and autocomplete on are default behavior for some browsers. -->
+<!-- can set additional attributes on input control -->
+
+<form action="http://jkorpela.fi/cgi-bin/echo.cgi"
+      validate 
+      autocomplete=on 
+      onsubmit='alert("\nname="+ name.value +
+                      "\nemail="+ email.value +
+                      "\nurl=" + url.value +
+                      "\nfavcolor=" + favcolor.value + 
+                      "\nquantity=" + quantity.value + 
+                      "\ncool=" + cool.value + 
+ 		      "\nbecool=" + becool.value + 
+		      "\ntel=" + tel.value + 
+                      "\nstartdate= " + startdate.value +
+		      "\nfile= " + file.value +
+		      "\ntime= " + time.value +
+		      "\nmonth= " + month.value +
+		      "\nweek= " + week.value +
+		      "\nlocal datatime= " + datetimelocal.value );'>
+
+
+<h1>Sign Up for FakeBook&reg</h1>
+<hr/>
+
+<p>Your name: <input type="name" name="name"  autocomplete=off /></p> 
+
+<p>Your email address: <input type="email" name="email"  autofocus required /></p> 
+
+<p>Your website's URL: <input type="url" name="url" /></p>
+
+<p>Your favorite color: <input  type="color" name="favcolor" value="#ff0000"/></p>
+
+<p>I want to receive <input type="number" min=1 max=20 step=2 name="quantity" placeholder="1"/> doses of <cite> Living Bread</cite> each day.</p>
+
+<p>How cool are you? (On a scale of 1-10):<input type="range" min="1" max="10" name="cool" /></p>
+
+<p>How cool do you want to become? (On a scale of 1-10):<input type="range" min="1" max="10" name="becool" value=10 disabled/></p>
+
+<p>phone #   <input type="tel" name="tel" pattern="[789][0-9]{9}" /> </p>
+
+<p>Your birthdate: <input type="date" min="1900-01-01" max="2016-09-23" name="startdate" placeholder="2015-09-23" /></p>
+
+<p>Select a file: <input type="file" name="file" multiple/></p>
+
+<p>Select time: <input type="time" name="time"/></p>
+
+<p>Select month: <input type="month" name="month"/></p>
+
+<p>Select week: <input type="week" name="week"/></p>
+
+<p>Select local date time: <input type="datetime-local" name="datetimelocal"/></p>
+
+<p><input type="submit"  value="Sign Me Up" /></p>
+
+</form>
+
+
+</body>
+
+</html> 
+
